@@ -27,5 +27,17 @@ public class Dog {
         spot.speak();
         scruffy.showName();
         scruffy.speak();
+        Dog jull = new Dog();
+        jull.setName("Jull");
+        jull.setSays("Хрю");
+        jull.showName();
+        jull.speak();
+        spot = jull;
+        spot.showName();
+        spot.speak();
+        jull.showName();
+        jull.speak();
+        System.out.println(spot.equals(jull));
+        System.out.println(spot == jull);
     }
 }
