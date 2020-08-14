@@ -25,10 +25,10 @@ public class PointTest {
     }
 
     @Test
-    public void distancePointTestThird() {
-        Point a = new Point(2, 2);
-        Point b = new Point(2, 2);
-        double out = a.distance(b);
+    public void distance3dPointTestThird() {
+        Point a = new Point(2, 2,2);
+        Point b = new Point(2, 2,2);
+        double out = a.distance3d(b);
         double expected = 0.0;
         Assert.assertEquals(expected, out, 0.01);
     }
