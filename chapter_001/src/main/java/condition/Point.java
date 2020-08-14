@@ -4,9 +4,7 @@ import static java.lang.StrictMath.pow;
 import static java.lang.StrictMath.sqrt;
 
 public class Point {
-
     private int x;
-
     private int y;
 
     public Point(int first, int second) {
