@@ -1,5 +1,4 @@
 package pojo;
-import encapsulation.License;
 import java.util.Date;
 
 public class Police {
