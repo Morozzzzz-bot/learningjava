@@ -52,5 +52,28 @@ public class Tracker {
         rsl = Arrays.copyOf(rsl, value);
         return rsl;
     }
+    public boolean replace(int id, Item item) {
+        boolean result = false;
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && items[i].getId() == id) {
+                items[i] = item;
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 
+    public boolean delete(int id) {
+        boolean result = false;
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] != null && items[i].getId() == id) {
+                System.arraycopy(items, i + 1, items, i, items.length - i - 1);
+                result = true;
+                this.size--;
+                break;
+            }
+        }
+        return result;
+    }
 }
