@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class StartUITest {
     @Test
     public void whenAddItem() {
-        String[] answers = {"Fix PC"};
+        String[] answers = {"Fix Pc"};
         Input input = new StubInput(answers);
         Tracker tracker = new Tracker();
         StartUI.createItem(input, tracker);
