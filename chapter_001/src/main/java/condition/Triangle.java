@@ -35,7 +35,7 @@ public class Triangle {
         double bc = second.distance(third);
         double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            rsl =sqrt(p * (p - ab) * (p - ac) * (p - bc));
+            rsl = sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }

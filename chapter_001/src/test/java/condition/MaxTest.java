@@ -18,13 +18,13 @@ public class MaxTest {
 
     @Test
     public void whenMax5To7Then7() {
-        int result = Max.max(5, 7, 9,10);
+        int result = Max.max(5, 7, 9, 10);
         assertThat(result, is(10));
     }
 
     @Test
     public void whenMax2To2Then2() {
-        int result = Max.max(2, 2,5,7);
+        int result = Max.max(2, 2, 5, 7);
         assertThat(result, is(7));
     }
 }
